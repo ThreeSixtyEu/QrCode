@@ -12,6 +12,12 @@
             "homepage": "http://endroid.nl/"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/ThreeSixtyEu/BaconQrCode.git"
+        }
+    ],
     "require": {
         "php": ">=5.6",
         "ext-gd": "*",
