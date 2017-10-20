@@ -25,6 +25,10 @@ services:
         class: Endroid\QrCode\Writer\PngWriter
         tags:
             - { name: endroid.qrcode.writer, set_as_default: true }
+    endroid.qrcode.writer.svg_path_writer:
+        class: Endroid\QrCode\Writer\SvgPathWriter
+        tags:
+            - { name: endroid.qrcode.writer }
     endroid.qrcode.writer.svg_writer:
         class: Endroid\QrCode\Writer\SvgWriter
         tags:

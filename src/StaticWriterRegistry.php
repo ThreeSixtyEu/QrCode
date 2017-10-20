@@ -13,6 +13,7 @@ use Endroid\QrCode\Writer\BinaryWriter;
 use Endroid\QrCode\Writer\DebugWriter;
 use Endroid\QrCode\Writer\EpsWriter;
 use Endroid\QrCode\Writer\PngWriter;
+use Endroid\QrCode\Writer\SvgPathWriter;
 use Endroid\QrCode\Writer\SvgWriter;
 
 class StaticWriterRegistry extends WriterRegistry
@@ -37,6 +38,7 @@ class StaticWriterRegistry extends WriterRegistry
         $this->addWriter(new DebugWriter());
         $this->addWriter(new EpsWriter());
         $this->addWriter(new PngWriter(), true);
+        $this->addWriter(new SvgPathWriter());
         $this->addWriter(new SvgWriter());
     }
 }
